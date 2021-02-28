@@ -16,15 +16,14 @@ This repository serves to host any artifacts created while working through [The 
 
 ## Commands
 
-| Command       | Purpose                  | Notes                                                                  |
-| :------------ | :----------------------- | :--------------------------------------------------------------------- |
-| `cargo build` | Compile, with executable | Produce executable, but does not run.                                  |
-| `cargo check` | Compile, no executable   | Faster than `cargo build`. No executable produced.                     |
-| `cargo fmt`   | Format code              | `rustfmt <file>` for individual files, `cargo fmt` applies to project. |
-
-| `cargo new <project>` | Build Porject                     | Creates `/src`, `Cargo.toml`, and intializes git in new directory. |
-| `cargo run`           | Compile, with executable, and run | Full build and execution of project.                               |
-| `cargo update`        | Update dependencies               | Update to latest that match SemVer in Cargo.toml.                  |
+| Command               | Purpose                           | Notes                                                                  |
+| :-------------------- | :-------------------------------- | :--------------------------------------------------------------------- |
+| `cargo build`         | Compile, with executable          | Produce executable, but does not run.                                  |
+| `cargo check`         | Compile, no executable            | Faster than `cargo build`. No executable produced.                     |
+| `cargo fmt`           | Format code                       | `rustfmt <file>` for individual files, `cargo fmt` applies to project. |
+| `cargo new <project>` | Build Project                     | Creates `/src`, `Cargo.toml`, and intializes git in new directory.     |
+| `cargo run`           | Compile, with executable, and run | Full build and execution of project.                                   |
+| `cargo update`        | Update dependencies               | Update to latest that match SemVer in Cargo.toml.                      |
 
 
 ## Notes
