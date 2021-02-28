@@ -28,6 +28,8 @@ This repository serves to host any artifacts created while working through [The 
 
 ## Notes
 
+### Chapter 2
+
 - **prelude**: Part of standard library automatically imported into every Rust program
 - In Rust, variables are immutable by default
   - `let foo = 5;` // immutable
@@ -36,6 +38,9 @@ This repository serves to host any artifacts created while working through [The 
 - For `Result`, the variants are `Ok` or `Err`. The `Ok` variant indicates the operation was successful, and inside `Ok` is the successfully generated value. The `Err` variant means the operation failed, and `Err` contains information about how or why the operation failed.
 - Cargo fetches the latest versions of everything from the registry, which is a copy of data from Crates.io.
 - Cargo figures out all the versions of the dependencies that fit the criteria and then writes them to the Cargo.lock file. When you build your project in the future, Cargo will see that the Cargo.lock file exists and use the versions specified there rather than doing all the work of figuring out versions again.
+- A `match` expression is made up of arms. An arm consists of a pattern and the code that should be run if the value given to the beginning of the `match` expression fits that arm’s pattern. Rust takes the value given to match and looks through each arm’s pattern in turn. The `match` construct and patterns are powerful features in Rust that let you express a variety of situations your code might encounter and make sure that you handle them all.
 - _Shadowing_ is often used in situations in which you want to convert a value from one type to another type. 
 - Switching from an `expect` call to a `match` expression is how you generally move from crashing on an error to handling the error. Remember that parse returns a `Result` type and `Result` is an enum that has the variants `Ok` or `Err`.
 -  The underscore, `_`, is a catchall value (`Err(_)`).
+
+### Chapter 3
